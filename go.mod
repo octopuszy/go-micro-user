@@ -1,4 +1,4 @@
-module micro_test
+module github.com/octopuszy/go-micro-user
 
 go 1.14
 
