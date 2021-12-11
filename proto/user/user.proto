@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package go.micro.service.user;
+
+option go_package = 'proto/user';       // 定义转换后的路径，如果不写会报错
+
+service User{
+  // 注册
+  rpc Register( RegisterReq ) returns( CommonRsp ){}
+
+  // 登录
+  rpc Login( LoginReq ) returns( CommonRsp ){}
+
+  // 查询用户信息
+  rpc GetUserInfo( GetUserInfoReq ) returns( GetUserInfoRsp ){}
+}
+
+message RegisterReq{
+  string user_name = 1;
+  string email = 2;
+  string password = 3;
+}
+
+message CommonRsp{
+  int64 error_no = 1;
+  string message = 2;
+}
+
+message LoginReq{
+  string user_name = 1;
+  string password = 2;
+}
+
+message GetUserInfoReq{
+  string user_name = 1;
+}
+
+message GetUserInfoRsp{
+  int64 user_id = 1;
+  string user_name = 2;
+  string email = 3;
+  string password = 4;
+}
