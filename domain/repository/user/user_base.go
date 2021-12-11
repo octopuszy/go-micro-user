@@ -1,7 +1,7 @@
 package user
 
 import (
-	"micro_test/domain/model/user"
+	"github.com/octopuszy/go-micro-user/domain/model/user"
 )
 
 type IUserRepository interface {

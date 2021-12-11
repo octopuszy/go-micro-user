@@ -2,7 +2,7 @@ package user
 
 import(
 	"github.com/jinzhu/gorm"
-	userModel "micro_test/domain/model/user"
+	userModel "github.com/octopuszy/go-micro-user/domain/model/user"
 )
 
 type UserRepository struct {

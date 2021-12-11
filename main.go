@@ -7,13 +7,13 @@ import (
 	"github.com/micro/go-micro/registry"
 	"github.com/micro/go-plugins/registry/etcdv3"
 	opentracing2 "github.com/micro/go-plugins/wrapper/trace/opentracing"
+	user_repository "github.com/octopuszy/go-micro-user/domain/repository/user"
+	user_service "github.com/octopuszy/go-micro-user/domain/service/user"
+	"github.com/octopuszy/go-micro-user/handler"
+	user_proto "github.com/octopuszy/go-micro-user/proto/user"
+	util "github.com/octopuszy/micro-util"
 	"github.com/opentracing/opentracing-go"
 	"log"
-	user_repository "micro_test/domain/repository/user"
-	user_service "micro_test/domain/service/user"
-	"micro_test/domain/util"
-	"micro_test/handler"
-	user_proto "micro_test/proto/user"
 )
 
 func main() {

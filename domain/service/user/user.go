@@ -1,9 +1,9 @@
 package user
 
 import (
-	userModel "micro_test/domain/model/user"
-	userRepository "micro_test/domain/repository/user"
-	"micro_test/domain/util"
+	userModel "github.com/octopuszy/go-micro-user/domain/model/user"
+	userRepository "github.com/octopuszy/go-micro-user/domain/repository/user"
+	util "github.com/octopuszy/micro-util"
 )
 
 type UserService struct {

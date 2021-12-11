@@ -8,10 +8,10 @@ import (
 	"github.com/micro/go-micro/registry"
 	"github.com/micro/go-plugins/registry/etcdv3"
 	opentracing2 "github.com/micro/go-plugins/wrapper/trace/opentracing"
+	userproto "github.com/octopuszy/go-micro-user/proto/user"
+	util "github.com/octopuszy/micro-util"
 	"github.com/opentracing/opentracing-go"
 	"log"
-	"micro_test/domain/util"
-	userproto "micro_test/proto/user"
 )
 
 func main() {

@@ -2,9 +2,9 @@ package handler
 
 import (
 	"context"
-	userModel "micro_test/domain/model/user"
-	service "micro_test/domain/service/user"
-	proto_user "micro_test/proto/user"
+	userModel "github.com/octopuszy/go-micro-user/domain/model/user"
+	service "github.com/octopuszy/go-micro-user/domain/service/user"
+	proto_user "github.com/octopuszy/go-micro-user/proto/user"
 )
 
 type User struct {
